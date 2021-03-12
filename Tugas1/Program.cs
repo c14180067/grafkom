@@ -10,7 +10,7 @@ namespace Tugas1
         {
             var ourWindow = new NativeWindowSettings()
             {
-                Size = new Vector2i(800, 800),
+                Size = new Vector2i(400, 400),
                 Title = "Tugas 1 - Grafkom"
             };
 

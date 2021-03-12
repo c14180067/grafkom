@@ -5,7 +5,6 @@ using LearnOpenTK.Common;
 using System;
 using OpenTK.Windowing.GraphicsLibraryFramework;
 using OpenTK.Mathematics;
-using System.Timers;
 
 namespace Tugas1
 {
@@ -191,7 +190,7 @@ namespace Tugas1
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            _shader_clock = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock.frag");
+            _shader_clock = new Shader("./Shaders/shader_clock.vert", "./Shaders/shader_clock.frag");
             _shader_clock.Use();
 
             //jarum detik
@@ -204,7 +203,7 @@ namespace Tugas1
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            _shader_detik = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock_needle.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock_needle.frag");
+            _shader_detik = new Shader("./Shaders/shader_clock_needle.vert", "./Shaders/shader_clock_needle.frag");
             _shader_detik.Use();
 
             //jarum menit
@@ -217,7 +216,7 @@ namespace Tugas1
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            _shader_menit = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock_needle.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock_needle.frag");
+            _shader_menit = new Shader("./Shaders/shader_clock_needle.vert", "./Shaders/shader_clock_needle.frag");
             _shader_menit.Use();
 
             //jarum jam
@@ -230,7 +229,7 @@ namespace Tugas1
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            _shader_jam = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock_needle.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_clock_needle.frag");
+            _shader_jam = new Shader("./Shaders/shader_clock_needle.vert", "./Shaders/shader_clock_needle.frag");
             _shader_jam.Use();
 
             ////square
@@ -262,7 +261,7 @@ namespace Tugas1
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            _shader_line = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader.frag");
+            _shader_line = new Shader("./Shaders/shader.vert", "./Shaders/shader.frag");
             _shader_line.Use();
 
             //inisialisasi bezier
@@ -275,7 +274,7 @@ namespace Tugas1
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            _shader_bezier = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader.frag");
+            _shader_bezier = new Shader("./Shaders/shader.vert", "./Shaders/shader.frag");
             _shader_bezier.Use();
 
             base.OnLoad();
@@ -298,7 +297,7 @@ namespace Tugas1
             }
             else
             {
-                if (count_menit < 60)
+                if (count_menit < 12)
                 {
                     float[] temp = rotate(_vertices_menit[3], _vertices_menit[4]);
                     _vertices_menit[3] = temp[0];

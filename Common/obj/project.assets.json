@@ -442,28 +442,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "/home/alfonsusenrico/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Kuliah\\Grafkom\\Tugas1\\Tugas1\\Common\\Common.csproj",
+      "projectUniqueName": "/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/Common.csproj",
       "projectName": "LearnOpenTK.Common",
-      "projectPath": "E:\\Kuliah\\Grafkom\\Tugas1\\Tugas1\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Kuliah\\Grafkom\\Tugas1\\Tugas1\\Common\\obj\\",
+      "projectPath": "/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/Common.csproj",
+      "packagesPath": "/home/alfonsusenrico/.nuget/packages/",
+      "outputPath": "/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/alfonsusenrico/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://packagesource": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -505,7 +502,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }

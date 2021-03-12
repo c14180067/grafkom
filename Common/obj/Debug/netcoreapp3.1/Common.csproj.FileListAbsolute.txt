@@ -1,26 +1,35 @@
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.deps.json
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.dll
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.pdb
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\obj\Debug\netcoreapp3.1\LearnOpenTK.Common.dll
-E:\Asisten Grafkom\LearnOpenTK-master\LearnOpenTK-master\Common\obj\Debug\netcoreapp3.1\LearnOpenTK.Common.pdb
-E:\Asisten Grafkom\OpenWindow\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.deps.json
-E:\Asisten Grafkom\OpenWindow\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.dll
-E:\Asisten Grafkom\OpenWindow\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.pdb
-E:\Asisten Grafkom\OpenWindow\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
-E:\Asisten Grafkom\OpenWindow\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
-E:\Asisten Grafkom\OpenWindow\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
-E:\Asisten Grafkom\OpenWindow\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
-E:\Asisten Grafkom\OpenWindow\Common\obj\Debug\netcoreapp3.1\LearnOpenTK.Common.dll
-E:\Asisten Grafkom\OpenWindow\Common\obj\Debug\netcoreapp3.1\LearnOpenTK.Common.pdb
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.deps.json
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.dll
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\bin\Debug\netcoreapp3.1\LearnOpenTK.Common.pdb
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\obj\Debug\netcoreapp3.1\LearnOpenTK.Common.dll
-E:\Kuliah\Grafkom\Tugas1\Tugas1\Common\obj\Debug\netcoreapp3.1\LearnOpenTK.Common.pdb
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.deps.json
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfoInputs.cache
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfo.cs
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/obj/Debug/netcoreapp3.1/Common.csproj.CoreCompileInputs.cache
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+E:/Asisten Grafkom/LearnOpenTK-master/LearnOpenTK-master/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
+E:/Asisten Grafkom/OpenWindow/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.deps.json
+E:/Asisten Grafkom/OpenWindow/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+E:/Asisten Grafkom/OpenWindow/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
+E:/Asisten Grafkom/OpenWindow/Common/obj/Debug/netcoreapp3.1/Common.csprojAssemblyReference.cache
+E:/Asisten Grafkom/OpenWindow/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfoInputs.cache
+E:/Asisten Grafkom/OpenWindow/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfo.cs
+E:/Asisten Grafkom/OpenWindow/Common/obj/Debug/netcoreapp3.1/Common.csproj.CoreCompileInputs.cache
+E:/Asisten Grafkom/OpenWindow/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+E:/Asisten Grafkom/OpenWindow/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.deps.json
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/obj/Debug/netcoreapp3.1/Common.csprojAssemblyReference.cache
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfoInputs.cache
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfo.cs
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/obj/Debug/netcoreapp3.1/Common.csproj.CoreCompileInputs.cache
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+E:/Kuliah/Grafkom/Tugas1/Tugas1/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.deps.json
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/bin/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/obj/Debug/netcoreapp3.1/Common.csprojAssemblyReference.cache
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfoInputs.cache
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/obj/Debug/netcoreapp3.1/Common.AssemblyInfo.cs
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/obj/Debug/netcoreapp3.1/Common.csproj.CoreCompileInputs.cache
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.dll
+/home/alfonsusenrico/kuliah/grafkom/tugas1/Common/obj/Debug/netcoreapp3.1/LearnOpenTK.Common.pdb
