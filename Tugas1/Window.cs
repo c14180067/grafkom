@@ -11,6 +11,115 @@ namespace Tugas1
 {
     class Window : GameWindow
     {
+        // QUADRIC
+        // elipsoid
+        private float[] _vertices_ellipsoid = new float[1800 * 3];
+        private int _ellipsoid_index = 0;
+
+        private int _vertexBufferObject_ellipsoid;
+        private int _vertexArrayObject_ellipsoid;
+        private Shader _shader_ellipsoid;
+
+        private void createEllipsoidVertices()
+        {
+            float _positionX = 0.6f;
+            float _positionY = 0.6f;
+            float _positionZ = 0.0f;
+
+            float _radius = 0.3f;
+
+            float pi = 3.1416f;
+
+            for (float u = -pi; u<=pi;u += pi/30)
+            {
+                for (float v = -pi / 2; v < pi / 2; v += pi / 30)
+                {
+                    _vertices_ellipsoid[_ellipsoid_index * 3] = _positionX + _radius * (float)Math.Cos(v) * (float)Math.Cos(u);
+                    _vertices_ellipsoid[_ellipsoid_index * 3 + 1] = _positionY + _radius * (float)Math.Cos(v) * (float)Math.Sin(u);
+                    _vertices_ellipsoid[_ellipsoid_index * 3 + 2] = _positionZ + _radius * (float)Math.Sin(v);
+                    _ellipsoid_index++;
+
+                }
+            }
+
+        }
+
+        // kubus
+        private float[] _box_vertices = new float[8 * 3];
+
+        private int _vertexBufferObject_box;
+        private int _vertexArrayObject_box;
+        private Shader _shader_box;
+        private int _elementBufferObject;
+
+        private readonly uint[] _titik_segitiga =
+        {
+            0,1,2,
+            1,2,3,
+            0,4,5,
+            0,1,5,
+            1,3,5,
+            3,5,7,
+            0,2,4,
+            2,4,6,
+            4,5,6,
+            5,6,7,
+            2,3,6,
+            3,6,7
+        };
+
+        //transformasi
+        private Matrix4 transform;
+
+        public void createBoxVertices()
+        {
+            float _positionX = 0.0f;
+            float _positionY = 0.0f;
+            float _positionZ = 0.0f;
+
+            float _boxLength = 0.5f;
+
+            //Titik 1
+            _box_vertices[0] = _positionX - _boxLength / 2.0f;
+            _box_vertices[1] = _positionY + _boxLength / 2.0f;
+            _box_vertices[2] = _positionZ - _boxLength / 2.0f;
+
+            //Titik 2
+            _box_vertices[3] = _positionX + _boxLength / 2.0f;
+            _box_vertices[4] = _positionY + _boxLength / 2.0f;
+            _box_vertices[5] = _positionZ - _boxLength / 2.0f;
+
+            //Titik 3
+            _box_vertices[6] = _positionX - _boxLength / 2.0f;
+            _box_vertices[7] = _positionY - _boxLength / 2.0f;
+            _box_vertices[8] = _positionZ - _boxLength / 2.0f;
+
+            //Titik 4
+            _box_vertices[9] = _positionX + _boxLength / 2.0f;
+            _box_vertices[10] = _positionY - _boxLength / 2.0f;
+            _box_vertices[11] = _positionZ - _boxLength / 2.0f;
+
+            //Titik 5
+            _box_vertices[12] = _positionX - _boxLength / 2.0f;
+            _box_vertices[13] = _positionY + _boxLength / 2.0f;
+            _box_vertices[14] = _positionZ + _boxLength / 2.0f;
+
+            //Titik 6
+            _box_vertices[15] = _positionX + _boxLength / 2.0f;
+            _box_vertices[16] = _positionY + _boxLength / 2.0f;
+            _box_vertices[17] = _positionZ + _boxLength / 2.0f;
+
+            //Titik 7
+            _box_vertices[18] = _positionX - _boxLength / 2.0f;
+            _box_vertices[19] = _positionY - _boxLength / 2.0f;
+            _box_vertices[20] = _positionZ + _boxLength / 2.0f;
+
+            //Titik 8
+            _box_vertices[21] = _positionX + _boxLength / 2.0f;
+            _box_vertices[22] = _positionY - _boxLength / 2.0f;
+            _box_vertices[23] = _positionZ + _boxLength / 2.0f;
+        }
+
         //jarum jam
         private float[] _vertices_jam =
         {
@@ -147,7 +256,7 @@ namespace Tugas1
             float y = 0.0f;
 
             //radius lingkaran
-            float radius = 0.5f;
+            float radius = 0.4f;
 
             ////radius elips
             //float radius_x = 0.1f;
@@ -180,6 +289,40 @@ namespace Tugas1
             Console.WriteLine("Titik kontrol: " + n);
 
             GL.ClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+
+            //ellipsoid
+            createEllipsoidVertices();
+            _vertexBufferObject_ellipsoid = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, _vertexBufferObject_ellipsoid);
+            GL.BufferData(BufferTarget.ArrayBuffer, _vertices_ellipsoid.Length * sizeof(float), _vertices_ellipsoid, BufferUsageHint.StaticDraw);
+
+            _vertexArrayObject_ellipsoid = GL.GenVertexArray();
+            GL.BindVertexArray(_vertexArrayObject_ellipsoid);
+            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+            GL.EnableVertexAttribArray(0);
+
+            _shader_ellipsoid = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_ellipsoid.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_ellipsoid.frag");
+            _shader_ellipsoid.Use();
+
+
+            //kubus
+            transform = Matrix4.Identity;
+            createBoxVertices();
+            _vertexBufferObject_box = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, _vertexBufferObject_box);
+            GL.BufferData(BufferTarget.ArrayBuffer, _box_vertices.Length * sizeof(float), _box_vertices, BufferUsageHint.StaticDraw);
+
+            _vertexArrayObject_box = GL.GenVertexArray();
+            GL.BindVertexArray(_vertexArrayObject_box);
+            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+            GL.EnableVertexAttribArray(0);
+
+            _shader_box = new Shader("E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_box.vert", "E:/Kuliah/Grafkom/Tugas1/Tugas1/Tugas1/Shaders/shader_box.frag");
+            _shader_box.Use();
+
+            _elementBufferObject = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer, _elementBufferObject);
+            GL.BufferData(BufferTarget.ElementArrayBuffer, _titik_segitiga.Length * sizeof(float), _titik_segitiga, BufferUsageHint.StaticDraw);
 
             //clock
             _vertexBufferObject_clock = GL.GenBuffer();
@@ -354,6 +497,21 @@ namespace Tugas1
             GL.Clear(ClearBufferMask.ColorBufferBit);
             //tengah sini berikan apa yang ingin kita gambar
 
+            transform = transform * Matrix4.CreateRotationX(MathHelper.DegreesToRadians(0.5f));
+            transform = transform * Matrix4.CreateRotationZ(MathHelper.DegreesToRadians(0.5f));
+
+            //ellipsoid
+            _shader_ellipsoid.Use();
+            _shader_ellipsoid.SetMatrix4("transform", transform);
+            GL.BindVertexArray(_vertexArrayObject_ellipsoid);
+            GL.DrawArrays(PrimitiveType.Lines, 0, _ellipsoid_index);
+
+            //box
+            _shader_box.Use();
+            _shader_box.SetMatrix4("transform", transform);
+            GL.BindVertexArray(_vertexArrayObject_box);
+            GL.DrawElements(PrimitiveType.Triangles, _titik_segitiga.Length, DrawElementsType.UnsignedInt, 0);
+
             ////square
             //_shader_square.Use();
             //GL.BindVertexArray(_vertexArrayObject_square);
@@ -489,7 +647,7 @@ namespace Tugas1
             SwapBuffers();
             base.OnRenderFrame(args);
 
-            System.Threading.Thread.Sleep(interval);
+            //System.Threading.Thread.Sleep(interval);
         }
 
         protected override void OnUpdateFrame(FrameEventArgs args)
@@ -560,7 +718,7 @@ namespace Tugas1
             {
                 //Console.WriteLine("Klik kiri");
 
-                if(point_count %3 != 0 || point_count == 0)
+                if(point_count != n)
                 {
                     //position
                     float posX = (MousePosition.X - Size.X / 2f) / (Size.X / 2f);
